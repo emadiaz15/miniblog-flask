@@ -1,0 +1,51 @@
+{% extends 'auth/base.html' %}
+
+{% block title %}REGÍSTRATE{% endblock %}
+
+{%block CustomCss%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+{%endblock%}
+
+{% block content %}
+  
+<body class="d-flex justify-content-center">  
+  <main class="form-signin text-center">
+    <form action="/register" method="POST">
+      <img class="mb-4" src="/static/img/logo.png" alt="" width="250" height="250">
+      <h1 class="h3 mb-3 fw-normal">Registrate</h1>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Usuario" name='username'>
+        <label for="floatingInput">Usuario</label>
+      </div>
+      
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" name='password'>
+        <label for="floatingPassword">Contraseña</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" name='password_confirm'>
+        <label for="floatingPassword">Confirmar contraseña</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" name='first_name'>
+        <label for="floatingInput">Nombre</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Apellido" name='last_name'>
+        <label for="floatingInput">Apellido</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Email" name='email'>
+        <label for="floatingInput">Email</label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit" name="register">Registrar</button>
+      <p class="mt-5 mb-3 text-muted">&copy;Miniblog 2023</p>
+    </form>
+  </div>
+  </main>  
+  </body>
+{% endblock %}

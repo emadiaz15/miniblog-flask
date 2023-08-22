@@ -1,0 +1,31 @@
+{% extends 'auth/base.html' %}
+
+{%block title%}LOGIN{%endblock%}
+
+{%block CustomCss%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+{%endblock%}
+
+{%block content%}
+<body class="d-flex justify-content-center">  
+  <main class="form-signin text-center">
+    <form action="/" method='POST'>
+      <img class="mb-4" src="/static/img/logo.png" alt="" width="250" height="250">
+      <h1 class="h3 mb-3 fw-normal">Bienvenido</h1>
+  
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese usuario" name='username'>
+        <label for="floatingInput">Usuario</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name='password'>
+        <label for="floatingPassword">Contraseña</label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit" name="signup" value="login">Iniciar Sesión</button>
+      <a href="{{ url_for('register') }}" class="w-100 btn btn-lg btn-primary">Registrar</a>
+      <p class="mt-5 mb-3 text-muted">&copy;Miniblog 2023</p>
+    </form>
+  </div>
+  </main>
+  </body>
+{%endblock%}

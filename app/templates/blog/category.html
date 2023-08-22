@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}CATEGORIA{% endblock %}
+
+{% block content %}
+<!--{{show_category.name}} -->
+<form action="{{ url_for('create_post') }}" method='POST'>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Titúlo" name='title'>
+      <label for="floatingInput">TITULO</label>
+    </div>
+    <div class="form-floating">
+      <textarea class="form-control" rows="5" placeholder="Contentido" name='content'></textarea>
+      <label for="floatingPassword">CONTENIDO</label>
+    </div>
+    <input type="hidden" name="category_id" value="{{ show_category.id }}"></input>
+    <button class="w-10 btn btn-lg btn-primary" type="submit" name="signup" value="login">PUBLICAR</button>
+  </form>
+
+{%for i in range (posts|length)%}
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold"> {{posts[i].title}} </h1>
+            <p class="col-md-8 fs-4"> {{posts[i].content}} </p>
+            <p class="col-md-8 fs-4"> {{authors[i]}} </p>
+            <button class="btn btn-primary btn-lg" type="button">Agregar comentario</button>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

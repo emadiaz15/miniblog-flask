@@ -1,5 +1,7 @@
 # Web miniblog flask
 
+Este proyecto 
+
 ## Instalación
 
 Para instalar y ejecutar esta aplicación, siga los siguientes pasos:
@@ -36,3 +38,4 @@ Una vez que la aplicación esté en ejecución, abra un navegador web y vaya a l
 
 **Jose Zacarías Flores**  - [Xukay101](https://github.com/Xukay101)
 **Diaz Emanuel**  - [emadiaz15](https://github.com/emadiaz15)
+**Franco Emanuel Benitez**  - [emanuel079](https://github.com/emanuel079)

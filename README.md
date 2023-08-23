@@ -1,7 +1,6 @@
 # Web miniblog flask
 
-- Miniblog Simulado
-Explora una plataforma que te permite compartir tus ideas a través de posteos, interactuar con comentarios y descubrir una variedad de categorías temáticas. Regístrate para crear tu perfil, comparte contenido cautivador y conecta con otros usuarios. Navega por categorías etiquetadas y enriquece la experiencia en una comunidad interactiva. ¡Únete ahora para inspirarte y conectar a través del poder de la escritura y la exploración!
+Miniblog Simulado, una plataforma que te permite compartir tus ideas a través de posteos, interactuar con comentarios y descubrir una variedad de categorías temáticas. Regístrate para crear tu perfil, comparte contenido cautivador y conecta con otros usuarios. Navega por categorías etiquetadas y enriquece la experiencia en una comunidad interactiva. ¡Únete ahora para inspirarte y conectar a través del poder de la escritura y la exploración!
 
 ## Instalación
 

@@ -9,8 +9,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     #Clave utilizada para proteger las sesiones
-    SECRET_KEY = os.environ.get('123456')
+    SECRET_KEY = os.getenv('SECRET_KEY')
     #Datos para establecer conexion con la bd 
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:@localhost:3310/miniblog_flask'
+    SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
     #habilita o deshabilita el seguimiento de modificaciones de objetos.
     SQLALCHEMY_TRACK_MODIFICATIONS = False
